@@ -1,0 +1,140 @@
+[
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 10,
+        "name": "Site Settings - Spreadsheet Metadata - by device name",
+        "description": "- This template uses a custom playbook to find ALL spreadsheets of type metadata in file [attachments](\/modules\/attachments) and then attaches to the device(s) if they exist.  ",
+        "metafieldTemplate": "{{sheet}}",
+        "metadataSources": "[\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"sheet\",\n    \"playbook_id\": \"db2fdd13-a520-4479-a6b4-0019e66342c8\",\n    \"argument\": \"hostname:{{record.devname}}\"\n  }\n]",
+        "uuid": "47f4c63a-e4ae-48e3-8133-4eefad31c19a",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1688155598.782281,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1688662516.766381,
+        "id": 141,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 10,
+        "name": "Site Settings - Spreadsheet Metadata - by sn",
+        "description": "- This template uses a custom playbook to find ALL spreadsheets of type metadata in file [attachments](\/modules\/attachments) and then attaches to the device(s) if they exist.  ",
+        "metafieldTemplate": "{{sheet}}",
+        "metadataSources": "[\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"sheet\",\n    \"playbook_id\": \"db2fdd13-a520-4479-a6b4-0019e66342c8\",\n    \"argument\": \"sn:{{record.sn}}\"\n  }\n]",
+        "uuid": "65515d54-9763-446b-8feb-959b5141045a",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1688662468.866991,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1688662499.125703,
+        "id": 142,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 5,
+        "name": "Global Settings",
+        "description": "High Level Variables for all Devices. \n - Dynamically get the `site_id` from the name in the device record. \n - Set the `system_dns`. ",
+        "metafieldTemplate": "{\n  \"site_id\": \"{{record.devname|regex_replace('[^0-9]', '')|int}}\",\n  \"system_dns\": \"8.8.8.8\"\n}",
+        "metadataSources": null,
+        "uuid": "b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1681917839.017956,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1686259695.390262,
+        "id": 134,
+        "recordTags": [
+            "ZTPF",
+            "ZTPF-A.1",
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 10,
+        "name": "Site Settings - Custom Playbook for for Loopback IP",
+        "description": "- This template triggers two sample custom playbooks for review. You can use the playbooks logs to see how variables could be used.\n- We use   `Return an IP Based on Hostname`  playbook to create `loopback0_ip`.\n- The `ip_table` is updated from the `Return a Table of Addresses` playbook. ",
+        "metafieldTemplate": "{\n  \"loopback0_ip\": \"{{ip_table_lookup[0]}}\",\n  \"ip_table\": \"{{ip_table|json_query('[].ip')|join(',')}}\"\n}",
+        "metadataSources": "[\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"ip_table\",\n    \"playbook_id\": \"9e6cff1f-0fe3-4c85-bf25-5cb409cea778\",\n    \"argument\": \"\"\n  },\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"ip_table_lookup\",\n    \"playbook_id\": \"1c6e570a-605e-46ac-9125-32f2af1877e7\",\n    \"argument\": \"{{record.devname}}\"\n  }\n]",
+        "uuid": "9ba426cd-205f-4ad2-8da7-347556338062",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1686674237.992029,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1686687984.149566,
+        "id": 135,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 10,
+        "name": "Site Settings - Prompt for Loopback IP",
+        "description": " - Create empty `loopback0_ip` field. ",
+        "metafieldTemplate": "{\"loopback0_ip\":\"\"}",
+        "metadataSources": null,
+        "uuid": "26637a92-6bf7-4758-9b93-919f99881592",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1685717187.518174,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1686259698.46644,
+        "id": 136,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 10,
+        "name": "Site Settings - Static IP Setting Based on Site ID",
+        "description": " - Create `loopback0_ip` from the `site_id`",
+        "metafieldTemplate": "{\n  \"loopback0_ip\": \"10.255.255.{{devmeta.site_id}}\"\n}",
+        "metadataSources": "",
+        "uuid": "a2ad4f14-e0f0-42cf-9ad2-80d78b9f8901",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1686747373.852947,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1686747436.205791,
+        "id": 137,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 100,
+        "name": "Custom playbook testing",
+        "description": "delete me ",
+        "metafieldTemplate": "\"{%- set lo0 = interfaces|json_query( '[?name == `lo0`].name' ) -%}\\n{%- set lo0_test = \\\"no\\\" -%}\\n{%- if lo0|length > 0  -%}\\n  {%- set lo0_test = \\\"yes\\\" -%}\\n{%- endif -%}\\n{%- set md = {} -%}\\n{%- set _do = md.update({\\\"lo0_exists\\\":lo0_test}) -%}\\n{{md}}\"",
+        "metadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  },\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"ip_table\",\n    \"playbook_id\": \"9e6cff1f-0fe3-4c85-bf25-5cb409cea778\",\n    \"argument\": \"\"\n  },\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"ip_table_lookup\",\n    \"playbook_id\": \"1c6e570a-605e-46ac-9125-32f2af1877e7\",\n    \"argument\": \"{{record.devname}}\"\n  }\n]",
+        "uuid": "60d9aa87-8894-448b-a781-376d153f7edd",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1686681253.092961,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1686686441.126912,
+        "id": 139,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "MetafieldTemplate",
+        "orderPriority": 100,
+        "name": "Loopback0 Config Check",
+        "description": "Confirm that Loopback0 exists on the FG. ",
+        "metafieldTemplate": "{%- set lo0 = interfaces|json_query( '[?name == `lo0`].name' ) -%}\n{%- set lo0_test = \"no\" -%}\n{%- if lo0|length > 0  -%}\n  {%- set lo0_test = \"yes\" -%}\n{%- endif -%}\n{%- set md = {} -%}\n{%- set _do = md.update({\"lo0_exists\":lo0_test}) -%}\n{{md}}",
+        "metadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
+        "uuid": "fea4c527-c0b1-4c73-b06b-9634f89f36ea",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1686171549.12008,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1686259703.45501,
+        "id": 140,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    }
+]
