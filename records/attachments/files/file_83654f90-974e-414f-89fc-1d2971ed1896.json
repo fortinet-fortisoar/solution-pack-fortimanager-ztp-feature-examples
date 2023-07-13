@@ -1,0 +1,13 @@
+{
+    "@context": "\/api\/3\/contexts\/File",
+    "@type": "File",
+    "uuid": "83654f90-974e-414f-89fc-1d2971ed1896",
+    "assignee": "",
+    "id": "83654f90-974e-414f-89fc-1d2971ed1896",
+    "filename": "feature-testA.csv",
+    "mimeType": "application\/vnd.ms-excel",
+    "uploadDate": 1688160841,
+    "size": 143,
+    "thumbnail": null,
+    "metadata": []
+}

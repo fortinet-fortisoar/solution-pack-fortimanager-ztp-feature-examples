@@ -1,0 +1,97 @@
+[
+    {
+        "@type": "Script",
+        "orderPriority": 100,
+        "scriptName": "Create Empty lo0 - DeviceDB",
+        "description": "Create a lo0 without an IP assigned. ",
+        "script": "config system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend",
+        "scriptMetadataSources": null,
+        "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
+        "metafieldTemplates": [],
+        "devices": [],
+        "managers": [],
+        "zTPProfiles": [],
+        "uuid": "e5e3c596-773f-49dc-9a4c-3ca56b69d4a0",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1689105201.922565,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1689105201.922565,
+        "id": 295,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "Script",
+        "orderPriority": 100,
+        "scriptName": "Create Loopback - lo0 - DeviceDB",
+        "description": "Create a Loopback0 `lo0` via the `Config DB`. ",
+        "script": "config system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend",
+        "scriptMetadataSources": null,
+        "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
+        "metafieldTemplates": [],
+        "devices": [],
+        "managers": [],
+        "zTPProfiles": [],
+        "uuid": "ae367096-3f4f-4510-af2b-12cb20d50c23",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1689101273.222667,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1689101273.222667,
+        "id": 307,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "Script",
+        "orderPriority": 51,
+        "scriptName": "Create VLANs - DeviceDB",
+        "description": "Script Template to create create VLANs on a Device DB using the metadata variables `site_subnet`, `vlan_count`, and `vlan_cidr`. ",
+        "script": "{%- set vlan_count = devmeta.vlan_count|int -%}\n{%- set site_subnet = devmeta.site_subnet -%}\n{%- set vlan_cidr = devmeta.vlan_cidr|int %}\n{%- set i = namespace(x=0) -%}\n{%- for vlan in range(2,2+vlan_count) %}\n  {%- set lan_block = site_subnet | ipaddr('subnet') | ipsubnet(vlan_cidr,i.x) -%}\nconfig system interface\n  edit \"VLAN{{vlan}}\"\n    set vdom \"root\"\n    set ip {{lan_block|ipaddr(1)|ipaddr('address')}} {{lan_block|ipaddr('netmask')}}\n    set allowaccess ping\n    set interface \"fortilink\"\n    set vlanid {{vlan}}\n    set description \"FortiSOAR Script run for DeviceID {{record.id}}\"\n  next\nend\n  {% set i.x = i.x+1 -%}\n{% endfor %}",
+        "scriptMetadataSources": null,
+        "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
+        "metafieldTemplates": [],
+        "devices": [],
+        "managers": [],
+        "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
+            "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9"
+        ],
+        "uuid": "c19290e3-6f13-4b30-8265-1a7bf2ed28b6",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1689256258.165621,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1689256599.596583,
+        "id": 317,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    },
+    {
+        "@type": "Script",
+        "orderPriority": 2005,
+        "scriptName": "All Interfaces Device Report",
+        "description": "Use the FMG API `\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface` to retrieve the FortiGate interfaces and put them into an attribute for jinja names `interfaces`. \n\nIterate through these interfaces and show a table of interfaces. ",
+        "script": "{%- set table = [] -%}\n{%- for i in interfaces -%}\n  {%- set rec = {} -%}\n  {%- if \"ip\" in i -%}\n    {%- if i.ip[0] != \"0.0.0.0\" -%}\n      {%- set subnet = ( i.ip[0] + \"\/\" + i.ip[1] ) | ipsubnet -%}\n      {%- set intip = subnet|ipaddr('cidr') -%}\n    {%- else -%}\n      {%- set intip = i.ip[0] -%}\n    {%- endif -%}\n  {%- else -%}\n    {%- set intip = \"no ip\" -%}\n  {%- endif -%}  \n  {%- set _do = rec.update({\n              \"name\":i.name,\n              \"description\":i.description,\n              \"type\":i.type,\n              \"ip\": intip\n  }) -%}    \n  {%- set _do = table.append(rec) -%}\n{%- endfor -%}\n\n#### Interfaces\n\n| Interface | Type | IP Address | Description |\n| ---------- | ------ | ------------  | ------------- |\n{% for r in table -%}\n| {{r.name}} | {{r.type}} | {{r.ip}} | {{r.description}} |\n{% endfor -%}",
+        "scriptMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
+        "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
+        "metafieldTemplates": [],
+        "devices": [],
+        "managers": [],
+        "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/98a60ff3-acc0-401c-af19-bc53d0d5469b",
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11"
+        ],
+        "uuid": "bcefa802-f8b4-49f4-b109-51862caf919b",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1689257616.21489,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1689259441.611916,
+        "id": 318,
+        "recordTags": [
+            "FeatureTest"
+        ]
+    }
+]
