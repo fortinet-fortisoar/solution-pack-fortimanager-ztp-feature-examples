@@ -1,6 +1,6 @@
 {
     "name": "fortiManagerZTPFlow-FeatureExamples",
-    "version": "1.0.9",
+    "version": "1.0.0",
     "fsrMinCompatibility": "7.4.0",
     "type": "solutionpack",
     "local": true,
