@@ -1,4 +1,5 @@
-[README](../README.md)
+| [Home](../README.md) |
+|--------------------------------------------|
 
 # Setup FortiManager ZTP Flow (ZTPF) Frameworkimages/setup/setup
 
