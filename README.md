@@ -1,6 +1,6 @@
 # Release Information
- - **Version**: 1.0.8
- - **Certified**: unknown
+ - **Version**: 1.0.0
+ - **Certified**: No
  - **Publisher**: Fortinet CSE
  - **Compatible Version**: 
    - FortiSOAR v7.4.0 and later
@@ -11,3 +11,8 @@
 # Overview
 
 This Feature Examples Solution Pack compliments the [FortiManager ZTP Flow (ZTPF) Framework](https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-framework) Solution Pack. In this solution pack you will see solution examples that highlight features available. You can use FortiManager Device Models, randomly created by this solution pack, or live devices already in your enviroment. 
+
+ # Next Steps
+
+| [Installation](docs/setup.md) | [Contents](docs/contents.md) |
+|-------------------------------|------------------------------|
