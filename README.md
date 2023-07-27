@@ -10,7 +10,7 @@
 
 # Overview
 
-The `FortiManager ZTP Flow - Feature Examples` Solution Pack compliments the [FortiManager ZTP Flow (ZTPF) Framework](https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-framework) Solution Pack with Feature Examples. In this solution pack you will see solution examples that highlight features available so you can simulate various ZTP possibilities. You can use FortiManager Device Models, randomly created by this solution pack, or live devices already in your enviroment. 
+The **FortiManager ZTP Flow - Feature Examples** Solution Pack compliments the [FortiManager ZTP Flow (ZTPF) Framework](https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-framework) Solution Pack with Feature Examples. In this solution pack you will see solution examples that highlight features available so you can simulate various ZTP possibilities. You can use FortiManager Device Models, randomly created by this solution pack, or use live devices already in your enviroment. Copy these examples and tweak them to meet the needs in your production enviroment. 
 
  # Next Steps
 
