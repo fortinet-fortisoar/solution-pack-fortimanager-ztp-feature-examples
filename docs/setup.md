@@ -1,9 +1,9 @@
 | [Home](../README.md) |
 |--------------------------------------------|
 
-# Setup FortiManager ZTP Flow (ZTPF) Frameworkres/setup/setup
+# Setup FortiManager ZTP Flow - Feature Examples
 
-Setting up the FortiSOAR/FortiManager ZTP Flow (ZTPF) integration depends a lot how you want to use the solution pack. The general order of setup consists of the following tasks and will vary based on what objectives you are trying to accomplish:
+Setting up the **FortiSOAR/FortiManager ZTP Flow (ZTPF)** integration depends a lot how you want to use the solution pack. The general order of setup consists of the following tasks and will vary based on what objectives you are trying to accomplish:
   - Install the [FortiManager ZTP Flow (ZTPF) Framework](https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-framework) Solution Pack
   - Select your FortiManager Manager record in FortiSOAR.
     - Execute `Device Model - Create Randomly`.
