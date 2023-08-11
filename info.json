@@ -33,24 +33,7 @@
     ],
     "date": "2023-07-13T19:53:09+00:00",
     "contents": {
-        "modules": {
-            "attachments": {
-                "name": "Attachments",
-                "apiName": "attachments"
-            },
-            "metafield_templates": {
-                "name": "Metafield Templates",
-                "apiName": "metafield_templates"
-            },
-            "scripts": {
-                "name": "Scripts",
-                "apiName": "scripts"
-            },
-            "z_t_p_profiles": {
-                "name": "ZTP Profiles",
-                "apiName": "z_t_p_profiles"
-            }
-        },
+        "modules": {},
         "recordSets": [
             {
                 "name": "Attachments",
