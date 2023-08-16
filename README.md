@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# solution-template-repository
-=======
 # Release Information
  - **Version**: 1.0.0
  - **Certified**: No
@@ -19,4 +16,3 @@ The **FortiManager ZTP Flow - Feature Examples** Solution Pack compliments the [
 
 | [Installation](docs/setup.md) | [Contents](docs/contents.md) |
 |-------------------------------|------------------------------|
->>>>>>> upstream/release/1.0.0
