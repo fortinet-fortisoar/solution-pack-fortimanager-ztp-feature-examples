@@ -16,7 +16,7 @@
     "prerequisite": null,
     "publisher": "Fortinet CSE",
     "description": "Feature focused solution examples using the FortiManager ZTP Flow Solution Pack. Create device models in your FMG and apply example solutions to see in action what would happen before you apply solutions to your production gear.",
-    "help": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-feature-examples",
+    "help": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-feature-examples/blob/release/1.0.0/README.md",
     "category": [
         "Compliance and Reporting",
         "DevOps and Digital Operations",
@@ -33,7 +33,6 @@
     ],
     "date": "2023-07-13T19:53:09+00:00",
     "contents": {
-        "modules": {},
         "recordSets": [
             {
                 "name": "Attachments",
