@@ -1,0 +1,98 @@
+[
+    {
+        "@type": "Attachment",
+        "name": "Metafield Lookup - CSV TEST B",
+        "description": "Example `CSV` file for `TEST B`. We overwrite a new field `from_csv` and `site_subnet` for `FG00109` only. This is because this record file is last. \n\n| hostname | looopback0_ip  | site_subnet | from_csv |\n| ------------- | --------------------- | ---------------- | ------------- |\n| FG00108 | 10.255.255.108  | 192.168.108.0\/24 | test1-A |\n| FG00109 | 10.255.255.109  | 192.168.109.0\/24 | test2-A  |",
+        "file": "\/api\/3\/files\/5e587074-b93f-4a52-b271-437dede836b2",
+        "type": "\/api\/3\/picklists\/9ad4871c-ef9a-4e44-a0e7-cc320041ad6f",
+        "alerts": [],
+        "assets": [],
+        "incidents": [],
+        "indicators": [],
+        "tasks": [],
+        "warrooms": [],
+        "comments": [],
+        "people": [],
+        "uuid": "1557c5ad-52bb-4d73-a5dc-2656825be103",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1688160924.141964,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1688161036.46426,
+        "tenant": "\/api\/3\/tenants\/b3a700f7-00be-4ef9-90c6-3c8fe6e1be63",
+        "conflict": false,
+        "tenantRecordId": 26,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "id": 28,
+        "recordTags": [
+            "FeatureTest"
+        ],
+        "assignee": "",
+        "userOwners": []
+    },
+    {
+        "@type": "Attachment",
+        "name": "Metadata Lookup - XLSX",
+        "description": "Example `XLSX` file. \n\n| hostname | looopback0_ip  | site_subnet | from_xlsx |\n| ------------- | --------------------- | ---------------- | ------------- |\n| FG00108 | 10.255.255.108  | 192.168.108.0\/24 | test1 |\n| FG00109 | 10.255.255.109  | 192.168.109.0\/24 | test2  |",
+        "file": "\/api\/3\/files\/dfa00e86-26a4-4f85-9a29-0a0841b00be3",
+        "type": "\/api\/3\/picklists\/9ad4871c-ef9a-4e44-a0e7-cc320041ad6f",
+        "alerts": [],
+        "assets": [],
+        "incidents": [],
+        "indicators": [],
+        "tasks": [],
+        "warrooms": [],
+        "comments": [],
+        "people": [],
+        "uuid": "2d0ae7ed-3017-4eba-9b33-b76b095a7a53",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1688154330.835867,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1688160482.238451,
+        "tenant": "\/api\/3\/tenants\/b3a700f7-00be-4ef9-90c6-3c8fe6e1be63",
+        "conflict": false,
+        "tenantRecordId": 25,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "id": 29,
+        "recordTags": [
+            "FeatureTest"
+        ],
+        "assignee": "",
+        "userOwners": []
+    },
+    {
+        "@type": "Attachment",
+        "name": "Metafield Lookup - CSV TEST A",
+        "description": "Example `CSV` file for `TEST A`. We add a new field `from_csv` but it will be overwritten by `TEST B`. \n\n| hostname | looopback0_ip  | site_subnet | from_csv |\n| ------------- | --------------------- | ---------------- | ------------- |\n| FG00108 | 10.255.255.108  | 192.168.108.0\/24 | test1-A |\n| FG00109 | 10.255.255.109  | 192.168.109.0\/24 | test2-A  |\n",
+        "file": "\/api\/3\/files\/83654f90-974e-414f-89fc-1d2971ed1896",
+        "type": "\/api\/3\/picklists\/9ad4871c-ef9a-4e44-a0e7-cc320041ad6f",
+        "alerts": [],
+        "assets": [],
+        "incidents": [],
+        "indicators": [],
+        "tasks": [],
+        "warrooms": [],
+        "comments": [],
+        "people": [],
+        "uuid": "ff0cdc5b-49d5-4e47-9bac-c23b5b865a09",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1688151177.061648,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1688161042.445744,
+        "tenant": "\/api\/3\/tenants\/b3a700f7-00be-4ef9-90c6-3c8fe6e1be63",
+        "conflict": false,
+        "tenantRecordId": 24,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "id": 30,
+        "recordTags": [
+            "FeatureTest"
+        ],
+        "assignee": "",
+        "userOwners": []
+    }
+]
