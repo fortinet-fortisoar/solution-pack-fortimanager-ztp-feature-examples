@@ -1,0 +1,60 @@
+{
+    "name": "fortiManagerZTPFlow-FeatureExamples",
+    "version": "1.0.0",
+    "fsrMinCompatibility": "7.4.0",
+    "type": "solutionpack",
+    "local": true,
+    "label": "FortiManager ZTP Flow - Feature Examples",
+    "dependencies": [
+        {
+            "name": "fortiManagerZTPFlow",
+            "type": "solutionpack",
+            "label": "FortiManager ZTP Flow",
+            "minVersion": null
+        }
+    ],
+    "prerequisite": null,
+    "publisher": "Fortinet CSE",
+    "description": "Feature focused solution examples using the FortiManager ZTP Flow Solution Pack. Create device models in your FMG and apply example solutions to see in action what would happen before you apply solutions to your production gear.",
+    "help": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-feature-examples",
+    "category": [
+        "Compliance and Reporting",
+        "DevOps and Digital Operations",
+        "Centralized Security Management",
+        "Utilities"
+    ],
+    "supportInfo": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-feature-examples/issues",
+    "iconLarge": null,
+    "postInstallConfig": null,
+    "recordTags": [
+        "FeatureTest",
+        "ZTP",
+        "FortiManager"
+    ],
+    "date": "2023-07-13T19:53:09+00:00",
+    "contents": {
+        "modules": {},
+        "recordSets": [
+            {
+                "name": "Attachments",
+                "apiName": "attachments",
+                "count": 3
+            },
+            {
+                "name": "Metafield Templates",
+                "apiName": "metafield_templates",
+                "count": 8
+            },
+            {
+                "name": "Scripts",
+                "apiName": "scripts",
+                "count": 4
+            },
+            {
+                "name": "ZTP Profiles",
+                "apiName": "z_t_p_profiles",
+                "count": 13
+            }
+        ]
+    }
+}
