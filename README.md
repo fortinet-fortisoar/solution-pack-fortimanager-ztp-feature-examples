@@ -6,7 +6,7 @@
    - FortiSOAR v7.4.0 and later
    - FortiManager v7.2.0 and later for full features. Limited features for earlier FortiManager versions. 
  - [**Changelog**](./docs/changelog.md)
- - **Install**: Follow steps outlined in the [Setup](docs/setup.md) Guide to get started.
+ - **Install**: Follow the steps outlined in the [Setup](./docs/setup.md) Guide to get started.
 
 # Overview
 
@@ -14,5 +14,5 @@ The **FortiManager ZTP Flow - Feature Examples** Solution Pack compliments the [
 
  # Next Steps
 
-| [Installation](docs/setup.md) | [Contents](docs/contents.md) |
-|-------------------------------|------------------------------|
+| [Installation](./docs/setup.md) | [Contents](./docs/contents.md) |
+|---------------------------------|--------------------------------|
