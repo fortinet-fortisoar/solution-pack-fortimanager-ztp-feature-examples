@@ -1,0 +1,13 @@
+{
+    "@context": "\/api\/3\/contexts\/File",
+    "@type": "File",
+    "uuid": "dfa00e86-26a4-4f85-9a29-0a0841b00be3",
+    "assignee": "",
+    "id": "dfa00e86-26a4-4f85-9a29-0a0841b00be3",
+    "filename": "feature-test.xlsx",
+    "mimeType": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "uploadDate": 1688160455,
+    "size": 8989,
+    "thumbnail": null,
+    "metadata": []
+}

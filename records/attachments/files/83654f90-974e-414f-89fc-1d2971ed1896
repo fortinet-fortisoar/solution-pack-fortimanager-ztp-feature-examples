@@ -1,0 +1,3 @@
+hostname,looopback0_ip,site_subnet,from_csv
+FG00108,10.255.255.108,192.168.108.0/24,test1-A
+FG00109,10.255.255.109,192.168.109.0/24,test2-A
