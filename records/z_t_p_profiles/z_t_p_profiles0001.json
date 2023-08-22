@@ -137,7 +137,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT002 - Prompt User for Metadata and Monitor FG config before proceeding",
-        "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Prompt user for an IP Address for `loopback0`.\n4.  Monitor for the `looopback0` interface to show up on the FG's Config before proceeding.Configure the following on the FortiGate or run the [DeviceDB Script](https:\/\/10.99.230.22\/modules\/view-panel\/scripts\/ae367096-3f4f-4510-af2b-12cb20d50c23) on the device. \n```\nconfig system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend\n```\n5.  Synchronize metafields to FortiManager using the `Export Metadata to FortiManager` flag. ",
+        "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Prompt user for an IP Address for `loopback0`.\n4.  Monitor for the `looopback0` interface to show up on the FG's Config before proceeding.Configure the following on the FortiGate or run the [DeviceDB Script](\/modules\/view-panel\/scripts\/ae367096-3f4f-4510-af2b-12cb20d50c23) on the device. \n```\nconfig system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend\n```\n5.  Synchronize metafields to FortiManager using the `Export Metadata to FortiManager` flag. ",
         "orderPriority": 102,
         "assignmentSearch": "FG0+102",
         "aDOM": "root",
@@ -228,7 +228,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT004 - Monitor Metafield from FG config before proceeding",
-        "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Assign IP Address for `loopback0`.\n4.  Monitor for the `looopback0` interface to show up on the FG's Config before proceeding.Configure the following on the FortiGate or run the [DeviceDB Script](https:\/\/10.99.230.22\/modules\/view-panel\/scripts\/ae367096-3f4f-4510-af2b-12cb20d50c23) on the device. \n```\nconfig system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend\n```\n5.  Synchronize metafields to FortiManager using the `Export Metadata to FortiManager` flag. ",
+        "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Assign IP Address for `loopback0`.\n4.  Monitor for the `looopback0` interface to show up on the FG's Config before proceeding.Configure the following on the FortiGate or run the [DeviceDB Script](\/modules\/view-panel\/scripts\/ae367096-3f4f-4510-af2b-12cb20d50c23) on the device. \n```\nconfig system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend\n```\n5.  Synchronize metafields to FortiManager using the `Export Metadata to FortiManager` flag. ",
         "orderPriority": 104,
         "assignmentSearch": "FG0+104",
         "aDOM": "root",
