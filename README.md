@@ -1,11 +1,12 @@
 # Release Information
- - **Version**: 1.0.0
+ - **Version**: 1.0.1
  - **Certified**: No
  - **Publisher**: Fortinet CSE
  - **Compatible Version**: 
    - FortiSOAR v7.4.0 and later
    - FortiManager v7.2.0 and later for full features. Limited features for earlier FortiManager versions. 
  - [**Changelog**](./docs/changelog.md)
+ - [Release Notes](./release_notes.md)
  - **Install**: Follow the steps outlined in the [Setup](./docs/setup.md) Guide to get started.
 
 # Overview
