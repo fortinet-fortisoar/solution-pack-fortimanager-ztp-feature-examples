@@ -32,6 +32,18 @@ The Profiles **FT001** and **FT002** both request FortiSOAR users for metafield 
 The Profiles **FT002** and **FT004** are monitoring for the existence of the `lo0` interface. 
 ![](./res/usage/ztpflowtest-monitoring-phases.png)
 
+The search for `lo0` is done using Jinja Template that searches the results of `/pm/config/device/\{\{record.devname\}\}/global/system/interface` using this script:
+```
+{%- set lo0 = interfaces|json_query( '[?name == `lo0`].name' ) -%}
+{%- set lo0_test = "no" -%}
+{%- if lo0|length > 0  -%}
+  {%- set lo0_test = "yes" -%}
+{%- endif -%}
+{%- set md = {} -%}
+{%- set _do = md.update({"lo0_exists":lo0_test}) -%}
+{{md}}
+```
+
 This can be created anyway you like, the commands are simply:
 ```
 config system interface
