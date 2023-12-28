@@ -15,7 +15,7 @@ To create random test devices in FMG leverage the Manager automation `Device Mod
 Once the devices show in the system the ZTP Profile will automatically be assigned and ZTP Phases will kick off. 
 ![](./res/usage/ztpflowtest-random-models-assigned-profiles.png)
 
-The Dashboard `TP Profile and Phase for Devices` then shows what stage the device is in for ZTP phases. 
+The Dashboard `ZTP Profile and Phase for Devices` then shows what stage the device is in for ZTP phases. 
 ![](./res/usage/ztpflowtest-random-models-phases.png)
 
 ## ZTP Profile Details
