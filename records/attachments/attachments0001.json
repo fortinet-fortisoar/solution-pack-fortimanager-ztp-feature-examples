@@ -18,13 +18,10 @@
         "createDate": 1688160924.141964,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "modifyDate": 1688161036.46426,
-        "tenant": "\/api\/3\/tenants\/b3a700f7-00be-4ef9-90c6-3c8fe6e1be63",
-        "conflict": false,
-        "tenantRecordId": 26,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 28,
+        "id": 1,
         "recordTags": [
             "FeatureTest"
         ],
@@ -50,13 +47,10 @@
         "createDate": 1688154330.835867,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "modifyDate": 1688160482.238451,
-        "tenant": "\/api\/3\/tenants\/b3a700f7-00be-4ef9-90c6-3c8fe6e1be63",
-        "conflict": false,
-        "tenantRecordId": 25,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 29,
+        "id": 2,
         "recordTags": [
             "FeatureTest"
         ],
@@ -82,13 +76,10 @@
         "createDate": 1688151177.061648,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "modifyDate": 1688161042.445744,
-        "tenant": "\/api\/3\/tenants\/b3a700f7-00be-4ef9-90c6-3c8fe6e1be63",
-        "conflict": false,
-        "tenantRecordId": 24,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 30,
+        "id": 3,
         "recordTags": [
             "FeatureTest"
         ],
