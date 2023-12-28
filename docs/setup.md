@@ -1,5 +1,5 @@
 | [Home](../README.md) |
-|--------------------------------------------|
+|----------------------|
 
 # Setup FortiManager ZTP Flow - Feature Examples
 
