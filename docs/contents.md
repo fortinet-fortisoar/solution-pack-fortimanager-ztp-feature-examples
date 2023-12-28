@@ -16,6 +16,8 @@ The **FortiManager ZTP Flow - Feature Examples** solution pack contains the foll
 
 ## Feature Tests (ZTP Profiles)
 
+This solution pack provide various examples of ZTP Profiles that can be used to test some common features needed in building an automation solution. You can use the automatic assigning of these profiles by creating devices matching the names already put in the ZTP Profile `Assignment Search` or you can manually assign a profile to one or more devices to perform the feature test. 
+
 | Feature Test ID | Profile Name | Description | 
 | --------------- | ------- | ----------- |
 | FT001 | Prompt User for Metadata via FortiSOAR | The metafield `loopback0_ip` is empty and FortiSOAR Users are prompted to complete through a system manual input task. |
@@ -32,5 +34,5 @@ The **FortiManager ZTP Flow - Feature Examples** solution pack contains the foll
 | FT012 | Install Site VLANs using DeviceDB Config and set ZTP Profile Next to Run a Report | Performs the same steps as **FT010** but then sets the `ZTP Profile Next` to the ZTP Profile `FT013 - Run Device Interface Report` to chain a second profile.  |
 | FT013 | Run Device Interface Report | Call the API of FMG for the device interfaces using a `Markdown Report` script template and append the device `Report Markdown` field for reporting. |
 
-| [Installation](./setup.md) |
-|----------------------------|
+| [Installation](./docs/setup.md) | [Usage](./docs/usage.md) |
+|---------------------------------|--------------------------|
