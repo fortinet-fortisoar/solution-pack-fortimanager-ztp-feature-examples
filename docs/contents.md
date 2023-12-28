@@ -37,4 +37,4 @@ This solution pack provide various examples of ZTP Profiles that can be used to 
 | FG015 | Automatic Assignment - Jinja Search for FG0114-FG0118 <=6 Ports | Check the `hostname` for `FG0114-FG0118`. Then use an API call to FMG to check `/global/system/interface` and a Jinja `json_query` function to count `physical` ports on a device and assign if it matches the range. |
 | FG016 | Automatic Assignment - Jinja Search for FG0114-FG0118 <=12 Ports | Same as **FG015** but with a different group of port count. | 
 | FG017 | Automatic Assignment - Jinja Search for FG0114-FG0118 <=20 Ports | Same as **FG015** but with a different group of port count. | 
-| FG018 | Automatic Assignment - Jinja Search for FG0114-FG0118 >20 Ports |  Same as **FG015** but a catch all if no other profile matched. | 
+| FG018 | Automatic Assignment - Jinja Search for FG0114-FG0118 >20 Ports |  Same as **FG015** but a catch all if no other profile with a port count matched. | 
