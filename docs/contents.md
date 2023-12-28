@@ -33,3 +33,8 @@ This solution pack provide various examples of ZTP Profiles that can be used to 
 | FT011 | Install Site VLANs using DeviceDB Config and Run Interface Report | Performs the same steps as **FT010** but then runs the same `Markdown Report` linked in **FT013**. |
 | FT012 | Install Site VLANs using DeviceDB Config and set ZTP Profile Next to Run a Report | Performs the same steps as **FT010** but then sets the `ZTP Profile Next` to the ZTP Profile `FT013 - Run Device Interface Report` to chain a second profile with **FT013**.  |
 | FT013 | Run Device Interface Report | Call the API of FMG for the device interfaces using a `Markdown Report` script template and append the device `Report Markdown` field for reporting. |
+| FT014 | Automatic Assignment - Advanced Search for FG0113 | Using Advanced search we leverage the regex `^(?=.*\bdevicename:FG0+113\b)(?=.*\bplatform:Forti\S+\b)(?=.*\bsn:FG0+113\b).*` to find devices based on `device name`, `platform`, and `serial`.  |
+| FG015 | Automatic Assignment - Jinja Search for FG0114-FG0118 <=6 Ports | Check the `hostname` for `FG0114-FG0118`. Then use an API call to FMG to check `/global/system/interface` and a Jinja `json_query` function to count `physical` ports on a device and assign if it matches the range. |
+| FG016 | Automatic Assignment - Jinja Search for FG0114-FG0118 <=12 Ports | Same as **FG015** but with a different group of port count. | 
+| FG017 | Automatic Assignment - Jinja Search for FG0114-FG0118 <=20 Ports | Same as **FG015** but with a different group of port count. | 
+| FG018 | Automatic Assignment - Jinja Search for FG0114-FG0118 >20 Ports |  Same as **FG015** but a catch all if no other profile matched. | 

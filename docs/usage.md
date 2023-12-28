@@ -9,7 +9,7 @@ This solution pack provide various examples of ZTP Profiles that can be used to 
 
 ## Setup FMG for Feature Tests
 
-To create random test devices in FMG leverage the Manager automation `Device Model - Create Randomly` and when prompted for `Range of Devices` enter `101-112`. 
+To create random test devices in FMG leverage the Manager automation `Device Model - Create Randomly` and when prompted for `Range of Devices` enter `101-118`. 
 ![](./res/usage/ztpflowtest-create-random-models.png)
 
 Once the devices show in the system the ZTP Profile will automatically be assigned and ZTP Phases will kick off. 
@@ -56,7 +56,7 @@ config system interface
 end
 ```
 
-You can use FortiSOAR to run scripts arbitrarily. In FortiSOAR and `FortiManager -> Scripts` you can open the record `Create Loopback - lo0 - DeviceDB` and run the `Render Script with a Device` automation. This will provide you with the CLI you need to create the Loopback and you can run this via the FMG API. If you want to see the script created in FMG then check the `Skip Delete Script` option and go check FortiMnager. 
+You can use FortiSOAR to run scripts arbitrarily. In FortiSOAR and `FortiManager -> Scripts` you can open the record `Create Loopback - lo0 - DeviceDB` and run the `Render Script with a Device` automation. This will provide you with the CLI you need to create the Loopback and you can run this via the FMG API. If you want to see the script created in FMG then check the `Skip Delete Script` option and go check FortiManager. 
 
 ![](./res/usage/ztpflowtest-script-render-create-lo0.png)
 
