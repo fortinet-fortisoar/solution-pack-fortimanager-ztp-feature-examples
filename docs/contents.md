@@ -31,7 +31,7 @@ This solution pack provide various examples of ZTP Profiles that can be used to 
 | FT009 | Clone of **FT008** and is never assigned due to order priority. | To show `order priority` working this profile has the same `Assignment Search` regex as FT008 but will not match on the device names due to order. |
 | FT010 | Install Site VLANs using DeviceDB Config | Create the metafield `site_id`, `site_subnet`, `vlan_cidr`, and `vlan_count`. The `site_subnet` is derived from taking a `/24` from `10.48.0.0/12` using the `site_subnet`. |
 | FT011 | Install Site VLANs using DeviceDB Config and Run Interface Report | Performs the same steps as **FT010** but then runs the same `Markdown Report` linked in **FT013**. |
-| FT012 | Install Site VLANs using DeviceDB Config and set ZTP Profile Next to Run a Report | Performs the same steps as **FT010** but then sets the `ZTP Profile Next` to the ZTP Profile `FT013 - Run Device Interface Report` to chain a second profile.  |
+| FT012 | Install Site VLANs using DeviceDB Config and set ZTP Profile Next to Run a Report | Performs the same steps as **FT010** but then sets the `ZTP Profile Next` to the ZTP Profile `FT013 - Run Device Interface Report` to chain a second profile with **FT013**.  |
 | FT013 | Run Device Interface Report | Call the API of FMG for the device interfaces using a `Markdown Report` script template and append the device `Report Markdown` field for reporting. |
 
 | [Installation](./docs/setup.md) | [Usage](./docs/usage.md) |
