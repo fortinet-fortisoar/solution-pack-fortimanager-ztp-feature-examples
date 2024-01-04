@@ -1,196 +1,6 @@
 [
     {
         "@type": "ZTPProfile",
-        "name": "Assign via Advanced",
-        "description": null,
-        "orderPriority": 102,
-        "assignmentSearchMetadataSources": null,
-        "assignmentSearch": ".*devicename:FG0+[123].*",
-        "aDOM": null,
-        "deviceGroups": null,
-        "provisioningTemplateGroup": null,
-        "policyPackage": null,
-        "zTPStepMap": "{\n  \"Authorize\": {\n    \"next_step\": \"Device Metadata\"\n  },\n  \"Device Metadata\": {\n    \"next_step\": \"Complete\"\n  }\n}",
-        "clearLinkedMetafieldTemplates": false,
-        "clearLinkedScripts": false,
-        "clearDeviceMetadata": false,
-        "retainProfileAssignment": false,
-        "exportMetadataToFortiManager": false,
-        "incompleteMetafieldEmail": null,
-        "clearDeviceReports": false,
-        "incompleteMetafieldDeviceMetadataField": "contact_email",
-        "incompleteMetafieldEmailEnable": false,
-        "skipDeleteDevice": false,
-        "deviceMetadataMonitorRegex": null,
-        "deviceMetadataMonitorInterval": 300,
-        "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
-        "scripts": [],
-        "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/f3b201ac-24f2-4940-8034-8d1f4964eb46"
-        ],
-        "devices": [],
-        "assignmentMode": "\/api\/3\/picklists\/36ca77e8-286f-4f66-8158-7ae978a2f1ee",
-        "assignmentSearchType": "\/api\/3\/picklists\/a0611652-03ae-4e5f-929a-3cc83a6df1ee",
-        "assignmentSearchField": [
-            "\/api\/3\/picklists\/9b3f23d5-bd8a-45cb-8983-a8ecca6a4943",
-            "\/api\/3\/picklists\/f097ef3c-f528-472b-90e1-065f819403fc"
-        ],
-        "zTPPhaseStart": "\/api\/3\/picklists\/8facfd8e-4927-4a88-9019-a7bbcf8f8ef6",
-        "zTPProfileNext": null,
-        "uuid": "2ea6502c-cd53-442f-85a7-70d3fe8927f0",
-        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "createDate": 1703698660.607444,
-        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1703707152.45482,
-        "owners": [
-            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
-        ],
-        "id": 3,
-        "recordTags": []
-    },
-    {
-        "@type": "ZTPProfile",
-        "name": "Assign via Jinja",
-        "description": null,
-        "orderPriority": 103,
-        "assignmentSearchMetadataSources": null,
-        "assignmentSearch": "{%- set search = true -%}\n{{search}}",
-        "aDOM": null,
-        "deviceGroups": null,
-        "provisioningTemplateGroup": null,
-        "policyPackage": null,
-        "zTPStepMap": "{\n  \"Authorize\": {\n    \"next_step\": \"Device Metadata\"\n  },\n  \"Device Metadata\": {\n    \"next_step\": \"Complete\"\n  }\n}",
-        "clearLinkedMetafieldTemplates": false,
-        "clearLinkedScripts": false,
-        "clearDeviceMetadata": false,
-        "retainProfileAssignment": false,
-        "exportMetadataToFortiManager": false,
-        "incompleteMetafieldEmail": null,
-        "clearDeviceReports": false,
-        "incompleteMetafieldDeviceMetadataField": "contact_email",
-        "incompleteMetafieldEmailEnable": false,
-        "skipDeleteDevice": false,
-        "deviceMetadataMonitorRegex": null,
-        "deviceMetadataMonitorInterval": 300,
-        "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
-        "scripts": [],
-        "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/f3b201ac-24f2-4940-8034-8d1f4964eb46"
-        ],
-        "devices": [],
-        "assignmentMode": "\/api\/3\/picklists\/36ca77e8-286f-4f66-8158-7ae978a2f1ee",
-        "assignmentSearchType": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
-        "assignmentSearchField": [],
-        "zTPPhaseStart": "\/api\/3\/picklists\/8facfd8e-4927-4a88-9019-a7bbcf8f8ef6",
-        "zTPProfileNext": null,
-        "uuid": "5b146642-ebbd-468f-ad1e-ca7e91f25483",
-        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "createDate": 1703698051.717185,
-        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1703707154.773811,
-        "owners": [
-            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
-        ],
-        "id": 1,
-        "recordTags": []
-    },
-    {
-        "@type": "ZTPProfile",
-        "name": "Assign via Jinja with Metasource Device Interfaces",
-        "description": null,
-        "orderPriority": 104,
-        "assignmentSearchMetadataSources": "[   {     \"source_type\": \"fmg\",     \"source\": \"{{record.connector_config}}\",     \"keyname\": \"interfaces\",     \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"   } ]",
-        "assignmentSearch": "{%- set search = true -%}\n{{search}}",
-        "aDOM": null,
-        "deviceGroups": null,
-        "provisioningTemplateGroup": null,
-        "policyPackage": null,
-        "zTPStepMap": "{\n  \"Authorize\": {\n    \"next_step\": \"Device Metadata\"\n  },\n  \"Device Metadata\": {\n    \"next_step\": \"Complete\"\n  }\n}",
-        "clearLinkedMetafieldTemplates": false,
-        "clearLinkedScripts": false,
-        "clearDeviceMetadata": false,
-        "retainProfileAssignment": false,
-        "exportMetadataToFortiManager": false,
-        "incompleteMetafieldEmail": null,
-        "clearDeviceReports": false,
-        "incompleteMetafieldDeviceMetadataField": "contact_email",
-        "incompleteMetafieldEmailEnable": false,
-        "skipDeleteDevice": false,
-        "deviceMetadataMonitorRegex": null,
-        "deviceMetadataMonitorInterval": 300,
-        "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
-        "scripts": [],
-        "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/f3b201ac-24f2-4940-8034-8d1f4964eb46"
-        ],
-        "devices": [],
-        "assignmentMode": "\/api\/3\/picklists\/36ca77e8-286f-4f66-8158-7ae978a2f1ee",
-        "assignmentSearchType": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
-        "assignmentSearchField": [],
-        "zTPPhaseStart": "\/api\/3\/picklists\/8facfd8e-4927-4a88-9019-a7bbcf8f8ef6",
-        "zTPProfileNext": null,
-        "uuid": "9b925d4a-3dac-4cf7-8b3f-80845a39bc3f",
-        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "createDate": 1703707169.332144,
-        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1703776356.918306,
-        "owners": [
-            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
-        ],
-        "id": 4,
-        "recordTags": []
-    },
-    {
-        "@type": "ZTPProfile",
-        "name": "Assign via Simple",
-        "description": null,
-        "orderPriority": 101,
-        "assignmentSearchMetadataSources": null,
-        "assignmentSearch": ".*FG0+[123].*",
-        "aDOM": null,
-        "deviceGroups": null,
-        "provisioningTemplateGroup": null,
-        "policyPackage": null,
-        "zTPStepMap": "{\n  \"Authorize\": {\n    \"next_step\": \"Device Metadata\"\n  },\n  \"Device Metadata\": {\n    \"next_step\": \"Complete\"\n  }\n}",
-        "clearLinkedMetafieldTemplates": false,
-        "clearLinkedScripts": false,
-        "clearDeviceMetadata": false,
-        "retainProfileAssignment": false,
-        "exportMetadataToFortiManager": false,
-        "incompleteMetafieldEmail": null,
-        "clearDeviceReports": false,
-        "incompleteMetafieldDeviceMetadataField": "contact_email",
-        "incompleteMetafieldEmailEnable": false,
-        "skipDeleteDevice": false,
-        "deviceMetadataMonitorRegex": null,
-        "deviceMetadataMonitorInterval": 300,
-        "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
-        "scripts": [],
-        "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/f3b201ac-24f2-4940-8034-8d1f4964eb46"
-        ],
-        "devices": [],
-        "assignmentMode": "\/api\/3\/picklists\/36ca77e8-286f-4f66-8158-7ae978a2f1ee",
-        "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
-        "assignmentSearchField": [
-            "\/api\/3\/picklists\/9b3f23d5-bd8a-45cb-8983-a8ecca6a4943",
-            "\/api\/3\/picklists\/f097ef3c-f528-472b-90e1-065f819403fc"
-        ],
-        "zTPPhaseStart": "\/api\/3\/picklists\/8facfd8e-4927-4a88-9019-a7bbcf8f8ef6",
-        "zTPProfileNext": null,
-        "uuid": "2479931f-b4a7-4d31-b4bd-8583113010d3",
-        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "createDate": 1703698595.577937,
-        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1703705135.689665,
-        "owners": [
-            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
-        ],
-        "id": 2,
-        "recordTags": []
-    },
-    {
-        "@type": "ZTPProfile",
         "name": "FT001 - Prompt User for Metadata via FortiSOAR",
         "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Prompt user for an IP Address for `loopback0`.\n4.  Synchronize metafields to FortiManager using the `Export Metadata to FortiManager` flag.  ",
         "orderPriority": 101,
@@ -235,7 +45,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 7,
+        "id": 27,
         "recordTags": [
             "FeatureTest",
             "metadata"
@@ -288,7 +98,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 8,
+        "id": 28,
         "recordTags": [
             "FeatureTest",
             "metadata",
@@ -341,7 +151,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 9,
+        "id": 29,
         "recordTags": [
             "FeatureTest",
             "metadata",
@@ -395,7 +205,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 10,
+        "id": 30,
         "recordTags": [
             "FeatureTest",
             "metadata",
@@ -447,7 +257,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 11,
+        "id": 31,
         "recordTags": [
             "FeatureTest",
             "device_group"
@@ -499,7 +309,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 12,
+        "id": 32,
         "recordTags": [
             "FeatureTest",
             "device_group",
@@ -551,7 +361,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 13,
+        "id": 33,
         "recordTags": [
             "FeatureTest",
             "device_group",
@@ -604,7 +414,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 14,
+        "id": 34,
         "recordTags": [
             "FeatureTest",
             "device_group",
@@ -656,7 +466,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 5,
+        "id": 35,
         "recordTags": [
             "FeatureTest",
             "device_group",
@@ -711,7 +521,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 6,
+        "id": 36,
         "recordTags": [
             "FeatureTest",
             "metadata",
@@ -767,7 +577,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 15,
+        "id": 37,
         "recordTags": [
             "FeatureTest",
             "metadata",
@@ -823,7 +633,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 16,
+        "id": 38,
         "recordTags": [
             "FeatureTest",
             "metadata",
@@ -873,7 +683,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 17,
+        "id": 39,
         "recordTags": [
             "FeatureTest",
             "ReportMarkdown"
@@ -912,9 +722,9 @@
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/a0611652-03ae-4e5f-929a-3cc83a6df1ee",
         "assignmentSearchField": [
+            "\/api\/3\/picklists\/f097ef3c-f528-472b-90e1-065f819403fc",
             "\/api\/3\/picklists\/06ea94b8-9a4c-45ce-8467-f9c1abecc8f5",
-            "\/api\/3\/picklists\/9b3f23d5-bd8a-45cb-8983-a8ecca6a4943",
-            "\/api\/3\/picklists\/f097ef3c-f528-472b-90e1-065f819403fc"
+            "\/api\/3\/picklists\/9b3f23d5-bd8a-45cb-8983-a8ecca6a4943"
         ],
         "zTPPhaseStart": "\/api\/3\/picklists\/8facfd8e-4927-4a88-9019-a7bbcf8f8ef6",
         "zTPProfileNext": null,
@@ -926,7 +736,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 18,
+        "id": 40,
         "recordTags": [
             "FeatureTest",
             "metadata"
@@ -978,7 +788,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 19,
+        "id": 41,
         "recordTags": [
             "FeatureTest",
             "metadata"
@@ -1030,7 +840,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 20,
+        "id": 42,
         "recordTags": [
             "FeatureTest",
             "metadata"
@@ -1082,7 +892,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 21,
+        "id": 43,
         "recordTags": [
             "FeatureTest",
             "metadata"
@@ -1134,7 +944,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 22,
+        "id": 44,
         "recordTags": [
             "FeatureTest",
             "metadata"

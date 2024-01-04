@@ -7,17 +7,17 @@
         "metafieldTemplate": "{\n  \"site_id\": \"{{record.devname|regex_replace('[^0-9]', '')|int}}\",\n  \"system_dns\": \"8.8.8.8\"\n}",
         "metadataSources": null,
         "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/5a9ba361-7fd9-496a-9f78-76ad16a650eb",
             "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
-            "\/api\/3\/z_t_p_profiles\/dc5681ea-09c5-43e6-9c53-932edd54a3e4",
-            "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf",
-            "\/api\/3\/z_t_p_profiles\/1ec909f6-082e-42e1-8441-e27407a2c56b",
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
+            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
             "\/api\/3\/z_t_p_profiles\/0be5a9e5-d3db-4633-9b7a-bcf04b090df5",
             "\/api\/3\/z_t_p_profiles\/fc4818dc-3e74-4a6d-a190-ff5cce4eabd8",
             "\/api\/3\/z_t_p_profiles\/99b838a4-69ff-41d2-862c-94aea967a842",
             "\/api\/3\/z_t_p_profiles\/ccf57f5c-ba87-4938-be1d-51f94f6af4bd",
-            "\/api\/3\/z_t_p_profiles\/5a9ba361-7fd9-496a-9f78-76ad16a650eb",
-            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
-            "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
+            "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf",
+            "\/api\/3\/z_t_p_profiles\/dc5681ea-09c5-43e6-9c53-932edd54a3e4",
+            "\/api\/3\/z_t_p_profiles\/1ec909f6-082e-42e1-8441-e27407a2c56b",
             "\/api\/3\/z_t_p_profiles\/0d699edf-bb43-4582-9015-4e51da0bfe00",
             "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326",
             "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
@@ -34,7 +34,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 8,
+        "id": 11,
         "recordTags": [
             "FeatureTest",
             "ZTPF",
@@ -61,7 +61,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 3,
+        "id": 12,
         "recordTags": [
             "FeatureTest"
         ]
@@ -86,7 +86,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 7,
+        "id": 13,
         "recordTags": [
             "FeatureTest"
         ]
@@ -112,7 +112,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 4,
+        "id": 14,
         "recordTags": [
             "FeatureTest"
         ]
@@ -125,8 +125,8 @@
         "metafieldTemplate": "{{sheet}}",
         "metadataSources": "[\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"sheet\",\n    \"playbook_id\": \"db2fdd13-a520-4479-a6b4-0019e66342c8\",\n    \"argument\": \"hostname:{{record.devname}}\"\n  }\n]",
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/f8033f6f-54e8-4e62-ad2e-bc6f5688c509",
-            "\/api\/3\/z_t_p_profiles\/5a9ba361-7fd9-496a-9f78-76ad16a650eb"
+            "\/api\/3\/z_t_p_profiles\/5a9ba361-7fd9-496a-9f78-76ad16a650eb",
+            "\/api\/3\/z_t_p_profiles\/f8033f6f-54e8-4e62-ad2e-bc6f5688c509"
         ],
         "devices": [],
         "scripts": [],
@@ -138,7 +138,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 2,
+        "id": 15,
         "recordTags": [
             "FeatureTest"
         ]
@@ -163,7 +163,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 5,
+        "id": 16,
         "recordTags": [
             "FeatureTest"
         ]
@@ -190,7 +190,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 9,
+        "id": 17,
         "recordTags": [
             "FeatureTest"
         ]
@@ -218,7 +218,7 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 10,
+        "id": 18,
         "recordTags": [
             "FeatureTest"
         ]
@@ -231,8 +231,8 @@
         "metafieldTemplate": "{%- set lo0 = interfaces|json_query( '[?name == `lo0`].name' ) -%}\n{%- set lo0_test = \"no\" -%}\n{%- if lo0|length > 0  -%}\n  {%- set lo0_test = \"yes\" -%}\n{%- endif -%}\n{%- set md = {} -%}\n{%- set _do = md.update({\"lo0_exists\":lo0_test}) -%}\n{{md}}",
         "metadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf",
-            "\/api\/3\/z_t_p_profiles\/0be5a9e5-d3db-4633-9b7a-bcf04b090df5"
+            "\/api\/3\/z_t_p_profiles\/0be5a9e5-d3db-4633-9b7a-bcf04b090df5",
+            "\/api\/3\/z_t_p_profiles\/d5c36dd9-935d-4a15-be0c-3588c75910bf"
         ],
         "devices": [],
         "scripts": [],
@@ -244,35 +244,9 @@
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
-        "id": 6,
+        "id": 19,
         "recordTags": [
             "FeatureTest"
         ]
-    },
-    {
-        "@type": "MetafieldTemplate",
-        "orderPriority": 100,
-        "name": "Site ID",
-        "description": "Get the site id from the device name. ",
-        "metafieldTemplate": "{\n  \"site_id\": \"{{record.devname|regex_replace('[^0-9]', '')|int}}\"\n}",
-        "metadataSources": null,
-        "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/9b925d4a-3dac-4cf7-8b3f-80845a39bc3f",
-            "\/api\/3\/z_t_p_profiles\/5b146642-ebbd-468f-ad1e-ca7e91f25483",
-            "\/api\/3\/z_t_p_profiles\/2ea6502c-cd53-442f-85a7-70d3fe8927f0",
-            "\/api\/3\/z_t_p_profiles\/2479931f-b4a7-4d31-b4bd-8583113010d3"
-        ],
-        "devices": [],
-        "scripts": [],
-        "uuid": "f3b201ac-24f2-4940-8034-8d1f4964eb46",
-        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "createDate": 1703698132.025228,
-        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1703698140.299749,
-        "owners": [
-            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
-        ],
-        "id": 1,
-        "recordTags": []
     }
 ]
