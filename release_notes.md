@@ -1,2 +1,3 @@
 ## What's New
-- Removed test instance IP from ZTP Profile records
+
+ - 1.0.2 - New Profile examples that shows Advanced and Jinja Search Types.
