@@ -1,16 +1,16 @@
 {
     "name": "fortiManagerZTPFlow-FeatureExamples",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "fsrMinCompatibility": "7.4.0",
     "type": "solutionpack",
-    "local": true,
+    "local": false,
     "label": "FortiManager ZTP Flow - Feature Examples",
     "dependencies": [
         {
             "name": "fortiManagerZTPFlow",
             "type": "solutionpack",
             "label": "FortiManager ZTP Flow",
-            "minVersion": null
+            "minVersion": "1.0.2"
         }
     ],
     "prerequisite": null,
@@ -20,39 +20,38 @@
     "category": [
         "Compliance and Reporting",
         "DevOps and Digital Operations",
-        "Centralized Security Management",
         "Utilities"
     ],
     "supportInfo": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-feature-examples/issues",
     "iconLarge": null,
     "postInstallConfig": null,
     "recordTags": [
-        "FeatureTest",
         "ZTP",
-        "FortiManager"
+        "FortiManager",
+        "FeatureTest"
     ],
-    "date": "2023-07-13T19:53:09+00:00",
+    "date": "2023-12-29T21:25:00+00:00",
     "contents": {
         "recordSets": [
             {
-                "name": "Attachments",
+                "name": null,
                 "apiName": "attachments",
                 "count": 3
             },
             {
-                "name": "Metafield Templates",
+                "name": null,
                 "apiName": "metafield_templates",
-                "count": 8
+                "count": 10
             },
             {
-                "name": "Scripts",
+                "name": null,
                 "apiName": "scripts",
-                "count": 4
+                "count": 5
             },
             {
-                "name": "ZTP Profiles",
+                "name": null,
                 "apiName": "z_t_p_profiles",
-                "count": 13
+                "count": 22
             }
         ]
     }

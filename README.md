@@ -1,5 +1,5 @@
 # Release Information
- - **Version**: 1.0.1
+ - **Version**: 1.0.2
  - **Certified**: No
  - **Publisher**: Fortinet CSE
  - **Compatible Version**: 
@@ -15,5 +15,5 @@ The **FortiManager ZTP Flow - Feature Examples** Solution Pack compliments the [
 
  # Next Steps
 
-| [Installation](./docs/setup.md) | [Contents](./docs/contents.md) |
-|---------------------------------|--------------------------------|
+| [Installation](./docs/setup.md) | [Contents](./docs/contents.md) | [Usage](./docs/usage.md) |
+|---------------------------------|--------------------------------|--------------------------|
