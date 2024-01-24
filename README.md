@@ -1,5 +1,5 @@
 # Release Information
- - **Version**: 1.0.1
+ - **Version**: 1.0.2
  - **Certified**: No
  - **Publisher**: Fortinet CSE
  - **Compatible Version**: 
