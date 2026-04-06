@@ -8,9 +8,7 @@
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/8612047e-edbe-45ee-8ed7-5470ad6926ff"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/a4d43aac-fb83-417b-9719-f0f4ec894f56"
@@ -33,12 +31,10 @@
         "scriptName": "Change the FortiManager Devicename using the API in a Custom Playbook",
         "description": null,
         "script": "{%- set idx = {} -%}\n{%- set _do = idx.update({\n  \"record\": {\n    \"devname\": devmeta.hostname,\n    \"comment\": \"Changed \" + record.devname + \" to \" + devmeta.hostname + \".\"\n  }\n}) -%}\n{{idx}}",
-        "scriptMetadataSources": "[\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"change_devicename\",\n    \"playbook_id\": \"8c3be36d-6637-4d19-9724-80e2953f5e7c\",\n    \"argument\": {\n      \"fmg_config\": \"{{record.connector_config}}\",\n      \"name\": \"{{record.devname}}\",\n      \"newname\": \"{{devmeta.hostname}}\"\n    }\n  }\n]",
+        "scriptMetadataSources": "[\n  {\n    \"source_type\": \"playbook\",\n    \"keyname\": \"change_devicename\",\n    \"playbook_id\": \"8c3be36d-6637-4d19-9724-80e2953f5e7c\",\n    \"argument\": {\n      \"fmg_config\": \"{{record.connector_config}}\",\n      \"adom\":\"{{record.adom}}\",\n      \"name\": \"{{record.devname}}\",\n      \"newname\": \"{{devmeta.hostname}}\"\n    }\n  }\n]",
         "scriptType": "\/api\/3\/picklists\/9b010b2b-91a5-4c83-aa0b-450008806da8",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/8612047e-edbe-45ee-8ed7-5470ad6926ff"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/a4d43aac-fb83-417b-9719-f0f4ec894f56"
@@ -47,7 +43,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1712857601.474415,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1712857783.87651,
+        "modifyDate": 1719586846.662273,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -60,25 +56,22 @@
         "orderPriority": 51,
         "scriptName": "Create VLANs - DeviceDB",
         "description": "Script Template to create create VLANs on a Device DB using the metadata variables `site_subnet`, `vlan_count`, and `vlan_cidr`. ",
-        "script": "{%- set vlan_count = devmeta.vlan_count|int -%}\n{%- set site_subnet = devmeta.site_subnet -%}\n{%- set vlan_cidr = devmeta.vlan_cidr|int %}\n{%- set i = namespace(x=0) -%}\n{%- for vlan in range(2,2+vlan_count) %}\n  {%- set lan_block = site_subnet | ipaddr('subnet') | ipsubnet(vlan_cidr,i.x) -%}\nconfig system interface\n  edit \"VLAN{{vlan}}\"\n    set vdom \"root\"\n    set ip {{lan_block|ipaddr(1)|ipaddr('address')}} {{lan_block|ipaddr('netmask')}}\n    set allowaccess ping\n    set interface \"fortilink\"\n    set vlanid {{vlan}}\n    set description \"FortiSOAR Script run for DeviceID {{record.id}}\"\n  next\nend\n  {% set i.x = i.x+1 -%}\n{% endfor %}",
+        "script": "{%- set vlan_count = devmeta.vlan_count|int -%}\n{%- set site_subnet = devmeta.site_subnet -%}\n{%- set vlan_cidr = devmeta.vlan_cidr|int %}\n{%- set i = namespace(x=0) -%}\n{%- for vlan in range(2,2+vlan_count) %}\n  {%- set lan_block = site_subnet | ipaddr('subnet') | ipsubnet(vlan_cidr,i.x) -%}\nconfig system interface\n  edit \"VLAN{{vlan}}\"\n    set vdom \"root\"\n    set ip {{lan_block|ipaddr(1)|ipaddr('address')}} {{lan_block|ipaddr('netmask')}}\n    set allowaccess ping ssh\n    set interface \"fortilink\"\n    set vlanid {{vlan}}\n    set description \"FortiSOAR Script run for DeviceID {{record.id}}\"\n  next\nend\n  {% set i.x = i.x+1 -%}\n{% endfor %}",
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/87e060e9-e940-4695-9603-044b639c2d49",
-            "\/api\/3\/devices\/3f1c13d0-91b0-4b0d-a78b-3dc0224b7e3f"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
             "\/api\/3\/z_t_p_profiles\/6d5faf07-886a-4cab-9934-983d173c25d4",
-            "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
-            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11"
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
+            "\/api\/3\/z_t_p_profiles\/4d4e7dfd-9831-4078-8826-98ed6f63f9b9"
         ],
         "uuid": "c19290e3-6f13-4b30-8265-1a7bf2ed28b6",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1689256258.165621,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1689256599.596583,
+        "modifyDate": 1719596091.993173,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -113,9 +106,90 @@
     {
         "@type": "Script",
         "orderPriority": 100,
+        "scriptName": "Create Example Policies Matrix",
+        "description": "Build sample address objects using the following metadata values:\n* `supernet` (Default=10.0.0.0\/8)\n* `cidr` (Default=32)\n* `start_index` (Default=1)\n* `network_count` (Default=4)\n\nThen build a policy matrix that creates a policy for every `src` to every `dst`. \n \n\n ",
+        "script": "{%- set mysupernet = devmeta.supernet|default('10.0.0.0\/8') -%}\n{%- set mycidr = devmeta.cidr|default(32) -%}\n{%- set mystart_index = devmeta.start_index|default(1) -%}\n{%- set mynetwork_count = devmeta.network_count|default(4) -%}\n\n{%- set networks = [] -%}\n{%- set i = namespace(x=0) -%}\n{%- for n in range(mystart_index,mynetwork_count+1) %}\n  {%- set mynet = mysupernet | ipaddr('subnet') | ipsubnet(mycidr,n) -%}\n  {%- if mynet -%}\n    {%- set _do = networks.append(mynet) -%}\n  {%- endif -%}\n  {%- set i.x = i.x+1 -%}\n{%- endfor -%}\nconfig firewall address\n{%- for a in networks %}\n  edit \"{{a}}\"\n    set subnet {{a}}\n    set comment \"Created by FortiSOAR ZTPF Script\"\n  next\n{%- endfor %}\nend\nconfig firewall policy\npurge\n{%- set e = namespace(x=1) -%}\n{%- for src in networks %}\n  {%- for dst in networks %}\n    {%- if src != dst %}\n  edit {{e.x}}\n    set name \"{{src}}-to-{{dst}}\"\n    set comment \"Created by FortiSOAR ZTPF Script\"\n    set srcaddr {{src}}\n    set dstaddr {{dst}}\n    set srcintf \"any\"\n    set dstintf \"any\"\n    set service \"ALL\"\n    set action accept\n    set schedule \"always\"\n    set logtraffic all\n  next\n    {%- set e.x = e.x+1 %}\n    {%- endif %}\n  {%- endfor %}\n{%- endfor %}\nend",
+        "scriptMetadataSources": null,
+        "scriptType": "\/api\/3\/picklists\/08bfc16f-8ddd-4da3-a1a2-0c95fc0d568f",
+        "metafieldTemplates": [],
+        "devices": [],
+        "managers": [],
+        "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/e5247f4b-18cd-40fa-b163-ea85a5db6a18"
+        ],
+        "uuid": "949e7d30-cee4-49c4-b38f-d821d8c7de39",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1720632052.411425,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720632331.336707,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest",
+            "PolicyPackage"
+        ]
+    },
+    {
+        "@type": "Script",
+        "orderPriority": 100,
+        "scriptName": "Create lo1 using FMG CLI Script with a Variable",
+        "description": null,
+        "script": "config system interface\n  edit lo1\n    set vdom root\n    set type loopback\n    set ip 172.29.255.$(site_id)\/32\n  next\nend",
+        "scriptMetadataSources": null,
+        "scriptType": "\/api\/3\/picklists\/0ba56e71-9b78-4076-95c0-4cd877809646",
+        "metafieldTemplates": [],
+        "devices": [],
+        "managers": [],
+        "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/31c8a02d-6c59-4dbe-a42f-22baa95065d0"
+        ],
+        "uuid": "58f8575e-cf67-49d4-ba38-6e2b8442f40f",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1720012997.467986,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720039547.868666,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest",
+            "ProvisioningTemplateGroup"
+        ]
+    },
+    {
+        "@type": "Script",
+        "orderPriority": 100,
+        "scriptName": "Create lo2 using FMG Jinja Script with a Supernet",
+        "description": null,
+        "script": "{%- set loopback_supernet = \"172.16.30.0\/23\" -%}\n{%- set netindex = site_id|int -%}\n{%- set loopback_ip = loopback_supernet|ipsubnet(32,netindex-1) -%}\nconfig system interface\n  edit lo1\n    set vdom root\n    set type loopback\n    set ip {{loopback_ip}}\n  next\nend",
+        "scriptMetadataSources": null,
+        "scriptType": "\/api\/3\/picklists\/d2190e91-0f13-4053-8be6-f6b3b077bb6a",
+        "metafieldTemplates": [],
+        "devices": [],
+        "managers": [],
+        "zTPProfiles": [
+            "\/api\/3\/z_t_p_profiles\/31c8a02d-6c59-4dbe-a42f-22baa95065d0"
+        ],
+        "uuid": "ce840e55-9e3d-43e4-98eb-4d3c7f21841f",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1720013006.694305,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720040124.833954,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest",
+            "ProvisioningTemplateGroup"
+        ]
+    },
+    {
+        "@type": "Script",
+        "orderPriority": 100,
         "scriptName": "Create Loopback - lo0 - DeviceDB",
-        "description": "Create a Loopback0 `lo0` via the `Config DB`. ",
-        "script": "config system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    {%- if devmeta.loopback0_ip is defined %}\n    set ip {{devmeta.loopback0_ip}}\/32\n    {%- endif %}\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend",
+        "description": "Create a Loopback0 `lo0` via the `Config DB`. \nOptionally configure an IP Address only if the metadata `loopback0_ip` exists. ",
+        "script": "config system interface\n  edit \"lo0\"\n    set type loopback\n    set vdom \"root\"\n    {%- if devmeta.loopback0_ip is defined and devmeta.loopback0_ip != '' %}\n    set ip {{devmeta.loopback0_ip}}\/32\n    {%- endif %}\n    set allowaccess ping\n    set description \"Create lo0 for monitor test\"\n  next\nend",
         "scriptMetadataSources": null,
         "scriptType": "\/api\/3\/picklists\/8aa09b4c-49a1-4a8e-9b7a-0e19a4c0ca54",
         "metafieldTemplates": [],
@@ -126,7 +200,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1689101273.222667,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1713295954.126113,
+        "modifyDate": 1720807047.65009,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -143,14 +217,11 @@
         "scriptMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/09359236-eb88-4962-97a4-d0b1a91894cc",
-            "\/api\/3\/devices\/87e060e9-e940-4695-9603-044b639c2d49"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
-            "\/api\/3\/z_t_p_profiles\/98a60ff3-acc0-401c-af19-bc53d0d5469b"
+            "\/api\/3\/z_t_p_profiles\/98a60ff3-acc0-401c-af19-bc53d0d5469b",
+            "\/api\/3\/z_t_p_profiles\/8c98bd29-b2a1-473b-aaee-d8dd18ffaa11"
         ],
         "uuid": "bcefa802-f8b4-49f4-b109-51862caf919b",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
@@ -173,19 +244,13 @@
         "scriptMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "scriptType": "\/api\/3\/picklists\/9a16d4e5-fa62-42ee-9adb-74239923890e",
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/c426a362-1615-4fb8-b114-dc43d4bc7733",
-            "\/api\/3\/devices\/b4294377-0789-4aab-9f89-84e043d45adc",
-            "\/api\/3\/devices\/bc9bf812-adf6-4d9f-9e50-9ff88ad48c23",
-            "\/api\/3\/devices\/a753827a-2d93-47af-bedb-1b10866be6be",
-            "\/api\/3\/devices\/0bd4e8ed-76f6-4c60-96f3-728799995488"
-        ],
+        "devices": [],
         "managers": [],
         "zTPProfiles": [
-            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba",
-            "\/api\/3\/z_t_p_profiles\/cc16e60d-15ae-4fbb-8de9-b3aa8d3dcafb",
+            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326",
             "\/api\/3\/z_t_p_profiles\/ded225f0-1c18-4f6e-992a-c47809741e87",
-            "\/api\/3\/z_t_p_profiles\/e8f6d0d8-5e9e-4c3a-9470-429c4bc64326"
+            "\/api\/3\/z_t_p_profiles\/cc16e60d-15ae-4fbb-8de9-b3aa8d3dcafb",
+            "\/api\/3\/z_t_p_profiles\/53f2f971-ad79-4831-8d5f-bd1120ac47ba"
         ],
         "uuid": "dfb4807a-4afa-43b9-87db-0651c5f9a3e7",
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",

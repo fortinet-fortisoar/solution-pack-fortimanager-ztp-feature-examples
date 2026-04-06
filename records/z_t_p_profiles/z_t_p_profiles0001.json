@@ -29,9 +29,7 @@
             "\/api\/3\/metafield_templates\/26637a92-6bf7-4758-9b93-919f99881592",
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/b10dcc12-5f91-42aa-9578-87fe83dac737"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -83,9 +81,7 @@
             "\/api\/3\/metafield_templates\/26637a92-6bf7-4758-9b93-919f99881592",
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/7ae1760a-b758-49c6-97db-4deb2fe477db"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -134,12 +130,10 @@
         "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
         "scripts": [],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/9ba426cd-205f-4ad2-8da7-347556338062",
-            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+            "\/api\/3\/metafield_templates\/9ba426cd-205f-4ad2-8da7-347556338062"
         ],
-        "devices": [
-            "\/api\/3\/devices\/4569cd1d-a290-4480-b513-a240b9d1fcf5"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -188,13 +182,11 @@
         "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
         "scripts": [],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/a2ad4f14-e0f0-42cf-9ad2-80d78b9f8901",
             "\/api\/3\/metafield_templates\/fea4c527-c0b1-4c73-b06b-9634f89f36ea",
+            "\/api\/3\/metafield_templates\/a2ad4f14-e0f0-42cf-9ad2-80d78b9f8901",
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/ee06d99c-6551-45b9-b239-7b29561fdea9"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -245,9 +237,7 @@
         "metafieldTemplates": [
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/bd372900-cfd2-4256-9589-fbeca682890c"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -298,9 +288,7 @@
             "\/api\/3\/metafield_templates\/445d3ab7-0844-46a2-b620-ee4896cf7026",
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/b2caa446-c61e-4e81-bb0b-1aacd49752c3"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -325,7 +313,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT007 - Retrieve Device Config",
-        "description": "1.  Authorize Device\n2.  Create `site_id` based on the Hostname.\n3.  Retrieve the Device Config. \n    a. If a device model will fail in FMG with a `updnotsupport` error. \n    b. Assign to real device to test. ",
+        "description": "1.  Authorize Device.\n2.  Create `site_id` based on the Hostname.\n3.  Retrieve the Device Config. \n    a. If a device model will fail in FMG with a `updnotsupport` error. \n    b. Assign to real device to test. ",
         "orderPriority": 107,
         "assignmentSearchMetadataSources": null,
         "assignmentSearch": "FG0+107",
@@ -351,9 +339,7 @@
         "metafieldTemplates": [
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/31fe9cb9-6b43-4ac1-ae41-933eeac572e4"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -364,8 +350,8 @@
         "uuid": "ccf57f5c-ba87-4938-be1d-51f94f6af4bd",
         "createUser": null,
         "createDate": null,
-        "modifyUser": null,
-        "modifyDate": null,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720808814.533867,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -378,7 +364,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT008 - Lookup Metadata in Spreadsheet from Hostname",
-        "description": "1.  Authorize Device\n2.  Create `site_id` based on the Hostname.\n3.  Lookup all metadata from file attachments of type metadata and `csv` or `xlsx`. \n4.  Synchronize metafields to FortiManager using the `Export Metadata to FortiManager` flag.  ",
+        "description": "1.  Authorize Device.\n2.  Create `site_id` based on the Hostname.\n3.  Lookup all metadata from file attachments of type metadata and `csv` or `xlsx`. \n4.  Synchronize metafields to FortiManager using the `Export Metadata to FortiManager` flag.  ",
         "orderPriority": 108,
         "assignmentSearchMetadataSources": null,
         "assignmentSearch": "FG0+10[89]",
@@ -405,10 +391,7 @@
             "\/api\/3\/metafield_templates\/47f4c63a-e4ae-48e3-8133-4eefad31c19a",
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/2d6ff4c0-9c4e-4c8b-ab5a-90b09a4ab91f",
-            "\/api\/3\/devices\/3673b42a-6ac8-4ab8-b5c5-ad1a759751d8"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -419,8 +402,8 @@
         "uuid": "5a9ba361-7fd9-496a-9f78-76ad16a650eb",
         "createUser": null,
         "createDate": null,
-        "modifyUser": null,
-        "modifyDate": null,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720808785.999328,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -485,7 +468,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT010 - Install Site VLANs using DeviceDB Config",
-        "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Create a `site_subnet` to create VLANs at the site. \n4.  Create a `vlan_cidr` and `vlan_count` to determine the subnet range and total number of VLANs. \n5.  Execute a `Device DB` [script](modules\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6) to use the above metadata and build the VLANs on the device. ",
+        "description": "1.  `Authorize` Device.\n2.  Create `site_id` based on the Hostname. \n3.  Create a `site_subnet` to create VLANs at the site. \n4.  Create a `vlan_cidr` and `vlan_count` to determine the subnet range and total number of VLANs. \n5.  Execute a `Device DB` [script](modules\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6) to use the above metadata and build the VLANs on the device. ",
         "orderPriority": 110,
         "assignmentSearchMetadataSources": null,
         "assignmentSearch": "FG0+110",
@@ -511,12 +494,10 @@
             "\/api\/3\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6"
         ],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/e16ef483-59dd-4ca2-85d4-035779a18065",
-            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+            "\/api\/3\/metafield_templates\/e16ef483-59dd-4ca2-85d4-035779a18065"
         ],
-        "devices": [
-            "\/api\/3\/devices\/3f1c13d0-91b0-4b0d-a78b-3dc0224b7e3f"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -527,8 +508,8 @@
         "uuid": "4d4e7dfd-9831-4078-8826-98ed6f63f9b9",
         "createUser": null,
         "createDate": null,
-        "modifyUser": null,
-        "modifyDate": null,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720808804.487393,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -541,7 +522,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT011 - Install Site VLANs using DeviceDB Config and Run Interface Report",
-        "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Create a `site_subnet` to create VLANs at the site. \n4.  Create a `vlan_cidr` and `vlan_count` to determine the subnet range and total number of VLANs. \n5.  Execute a `Device DB` [script](modules\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6) to use the above metadata and build the VLANs on the device. \n6.  Run a `Device Interface Report` [script](modules\/scripts\/bcefa802-f8b4-49f4-b109-51862caf919b) on the device to show all the interfaces in the FMG Device Config. ",
+        "description": "1.  `Authorize` Device.\n2.  Create `site_id` based on the Hostname. \n3.  Create a `site_subnet` to create VLANs at the site. \n4.  Create a `vlan_cidr` and `vlan_count` to determine the subnet range and total number of VLANs. \n5.  Execute a `Device DB` [script](modules\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6) to use the above metadata and build the VLANs on the device. \n6.  Run a `Device Interface Report` [script](modules\/scripts\/bcefa802-f8b4-49f4-b109-51862caf919b) on the device to show all the interfaces in the FMG Device Config. ",
         "orderPriority": 111,
         "assignmentSearchMetadataSources": null,
         "assignmentSearch": "FG0+111",
@@ -564,16 +545,14 @@
         "deviceMetadataMonitorInterval": 300,
         "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
         "scripts": [
-            "\/api\/3\/scripts\/bcefa802-f8b4-49f4-b109-51862caf919b",
-            "\/api\/3\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6"
+            "\/api\/3\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6",
+            "\/api\/3\/scripts\/bcefa802-f8b4-49f4-b109-51862caf919b"
         ],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/e16ef483-59dd-4ca2-85d4-035779a18065",
-            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+            "\/api\/3\/metafield_templates\/e16ef483-59dd-4ca2-85d4-035779a18065"
         ],
-        "devices": [
-            "\/api\/3\/devices\/87e060e9-e940-4695-9603-044b639c2d49"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -584,8 +563,8 @@
         "uuid": "8c98bd29-b2a1-473b-aaee-d8dd18ffaa11",
         "createUser": null,
         "createDate": null,
-        "modifyUser": null,
-        "modifyDate": null,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720808838.195825,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -599,7 +578,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT012 - Install Site VLANs using DeviceDB Config and set ZTP Profile Next to Run a Report",
-        "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Create a `site_subnet` to create VLANs at the site. \n4.  Create a `vlan_cidr` and `vlan_count` to determine the subnet range and total number of VLANs. \n5.  Execute a `Device DB` [script](modules\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6) to use the above metadata and build the VLANs on the device. ",
+        "description": "1.  `Authorize` Device.\n2.  Create `site_id` based on the Hostname. \n3.  Create a `site_subnet` to create VLANs at the site. \n4.  Create a `vlan_cidr` and `vlan_count` to determine the subnet range and total number of VLANs. \n5.  Execute a `Device DB` [script](modules\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6) to use the above metadata and build the VLANs on the device. ",
         "orderPriority": 112,
         "assignmentSearchMetadataSources": null,
         "assignmentSearch": "FG0+112",
@@ -625,8 +604,8 @@
             "\/api\/3\/scripts\/c19290e3-6f13-4b30-8265-1a7bf2ed28b6"
         ],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/e16ef483-59dd-4ca2-85d4-035779a18065",
-            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+            "\/api\/3\/metafield_templates\/e16ef483-59dd-4ca2-85d4-035779a18065"
         ],
         "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
@@ -639,8 +618,8 @@
         "uuid": "6d5faf07-886a-4cab-9934-983d173c25d4",
         "createUser": null,
         "createDate": null,
-        "modifyUser": null,
-        "modifyDate": null,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720808846.851373,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -679,9 +658,7 @@
             "\/api\/3\/scripts\/bcefa802-f8b4-49f4-b109-51862caf919b"
         ],
         "metafieldTemplates": [],
-        "devices": [
-            "\/api\/3\/devices\/09359236-eb88-4962-97a4-d0b1a91894cc"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/36ca77e8-286f-4f66-8158-7ae978a2f1ee",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [],
@@ -703,7 +680,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT014 - Automatic Assignment - Advanced Search for FG0113",
-        "description": "1.  Find Devices using the `Advanced` `Assignment Search Type`. \n2.  `Authorize` Device\n3.  Create `site_id` based on the Hostname. ",
+        "description": "1.  Find Devices using the `Advanced` `Assignment Search Type`. \n2.  `Authorize` Device.\n3.  Create `site_id` based on the Hostname. ",
         "orderPriority": 114,
         "assignmentSearchMetadataSources": null,
         "assignmentSearch": "^(?=.*\\bdevicename:FG0+113\\b)(?=.*\\bplatform:Forti\\S+\\b)(?=.*\\bsn:FG0+113\\b).*",
@@ -729,9 +706,7 @@
         "metafieldTemplates": [
             "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
         ],
-        "devices": [
-            "\/api\/3\/devices\/d1e07819-e5a1-464d-a9ea-7912f0ae958e"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/a0611652-03ae-4e5f-929a-3cc83a6df1ee",
         "assignmentSearchField": [
@@ -745,7 +720,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1703879351.116253,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1712859007.808052,
+        "modifyDate": 1720808876.892246,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -758,7 +733,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT015 - Automatic Assignment - Jinja Search for FG0114-FG0118 <=6 Ports",
-        "description": "1.  Find Devices using the `Jinja` `Assignment Search Type` that are named FG0114-FG0118 and have `<=` 6 Physical Ports. \n2.  `Authorize` Device\n3.  Create `site_id` based on the Hostname. \n4.  Create a `port_count` for physical ports found. ",
+        "description": "1.  Find Devices using the `Jinja` `Assignment Search Type` that are named FG0114-FG0118 and have `<=` 6 Physical Ports. \n2.  `Authorize` Device.\n3.  Create `site_id` based on the Hostname. \n4.  Create a `port_count` for physical ports found. ",
         "orderPriority": 115,
         "assignmentSearchMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "assignmentSearch": "{%- set regx = \"^FG0+11[45678]$\" -%}\n{%- set c = interfaces|json_query( '[?type == `physical`].name' ) | length -%}\n{%- if record.devname | regex_search(regx) -%}\n  {%- if c <= 6 -%}\ntrue\n  {%- endif -%}\n{%- endif -%}",
@@ -784,12 +759,10 @@
             "\/api\/3\/scripts\/dfb4807a-4afa-43b9-87db-0651c5f9a3e7"
         ],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e",
-            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+            "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e"
         ],
-        "devices": [
-            "\/api\/3\/devices\/bc9bf812-adf6-4d9f-9e50-9ff88ad48c23"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
         "assignmentSearchField": [],
@@ -799,7 +772,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1703880577.336304,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1712858994.39365,
+        "modifyDate": 1720808891.41808,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -812,7 +785,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT016 - Automatic Assignment - Jinja Search for FG0114-FG0118 <=12 Ports",
-        "description": "1.  Find Devices using the `Jinja` `Assignment Search Type` that are named FG0114-FG0118 and have `<=` 6 Physical Ports. \n2.  `Authorize` Device\n3.  Create `site_id` based on the Hostname. \n4.  Create a `port_count` for physical ports found. ",
+        "description": "1.  Find Devices using the `Jinja` `Assignment Search Type` that are named FG0114-FG0118 and have `<=` 6 Physical Ports. \n2.  `Authorize` Device.\n3.  Create `site_id` based on the Hostname. \n4.  Create a `port_count` for physical ports found. ",
         "orderPriority": 116,
         "assignmentSearchMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "assignmentSearch": "{%- set regx = \"^FG0+11[45678]$\" -%}\n{%- set c = interfaces|json_query( '[?type == `physical`].name' ) | length -%}\n{%- if record.devname | regex_search(regx) -%}\n  {%- if c <= 12 -%}\ntrue\n  {%- endif -%}\n{%- endif -%}",
@@ -838,8 +811,8 @@
             "\/api\/3\/scripts\/dfb4807a-4afa-43b9-87db-0651c5f9a3e7"
         ],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e",
-            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+            "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e"
         ],
         "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
@@ -851,7 +824,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1703881605.14237,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1712858989.687856,
+        "modifyDate": 1720808907.559737,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -864,7 +837,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT017 - Automatic Assignment - Jinja Search for FG0114-FG0118 <=20 Ports",
-        "description": "1.  Find Devices using the `Jinja` `Assignment Search Type` that are named FG0114-FG0118 and have `<=` 20 Physical Ports. \n2.  `Authorize` Device\n3.  Create `site_id` based on the Hostname. \n4.  Create a `port_count` for physical ports found. ",
+        "description": "1.  Find Devices using the `Jinja` `Assignment Search Type` that are named FG0114-FG0118 and have `<=` 20 Physical Ports. \n2.  `Authorize` Device.\n3.  Create `site_id` based on the Hostname. \n4.  Create a `port_count` for physical ports found. ",
         "orderPriority": 117,
         "assignmentSearchMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "assignmentSearch": "{%- set regx = \"^FG0+11[45678]$\" -%}\n{%- set c = interfaces|json_query( '[?type == `physical`].name' ) | length -%}\n{%- if record.devname | regex_search(regx) -%}\n  {%- if c <= 20 -%}\ntrue\n  {%- endif -%}\n{%- endif -%}",
@@ -890,13 +863,10 @@
             "\/api\/3\/scripts\/dfb4807a-4afa-43b9-87db-0651c5f9a3e7"
         ],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e",
-            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+            "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e"
         ],
-        "devices": [
-            "\/api\/3\/devices\/c426a362-1615-4fb8-b114-dc43d4bc7733",
-            "\/api\/3\/devices\/0bd4e8ed-76f6-4c60-96f3-728799995488"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
         "assignmentSearchField": [],
@@ -906,7 +876,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1703882311.743493,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1712858984.587913,
+        "modifyDate": 1720808912.249151,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -919,7 +889,7 @@
     {
         "@type": "ZTPProfile",
         "name": "FT018 - Automatic Assignment - Jinja Search for FG0114-FG0118 >20 Ports",
-        "description": "1.  Find Devices using the `Jinja` `Assignment Search Type` that are named FG0114-FG0118 and have `>` 20 Physical Ports. \n2.  `Authorize` Device\n3.  Create `site_id` based on the Hostname. \n4.  Create a `port_count` for physical ports found. ",
+        "description": "1.  Find Devices using the `Jinja` `Assignment Search Type` that are named FG0114-FG0118 and have `>` 20 Physical Ports. \n2.  `Authorize` Device.\n3.  Create `site_id` based on the Hostname. \n4.  Create a `port_count` for physical ports found. ",
         "orderPriority": 118,
         "assignmentSearchMetadataSources": "[\n  {\n    \"source_type\": \"fmg\",\n    \"source\": \"{{record.connector_config}}\",\n    \"keyname\": \"interfaces\",\n    \"location\": \"\/pm\/config\/device\/{{record.devname}}\/global\/system\/interface\"\n  }\n]",
         "assignmentSearch": "{%- set regx = \"^FG0+11[45678]$\" -%}\n{%- set c = interfaces|json_query( '[?type == `physical`].name' ) | length -%}\n{%- if record.devname | regex_search(regx) -%}\n  {%- if c > 20 -%}\ntrue\n  {%- endif -%}\n{%- endif -%}",
@@ -945,13 +915,10 @@
             "\/api\/3\/scripts\/dfb4807a-4afa-43b9-87db-0651c5f9a3e7"
         ],
         "metafieldTemplates": [
-            "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e",
-            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97",
+            "\/api\/3\/metafield_templates\/dc2f4fb9-105d-4fe3-92f9-741a9527be1e"
         ],
-        "devices": [
-            "\/api\/3\/devices\/b4294377-0789-4aab-9f89-84e043d45adc",
-            "\/api\/3\/devices\/a753827a-2d93-47af-bedb-1b10866be6be"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
         "assignmentSearchField": [],
@@ -961,7 +928,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1703882437.542489,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1712858979.178582,
+        "modifyDate": 1720808916.447378,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -974,8 +941,8 @@
     {
         "@type": "ZTPProfile",
         "name": "FT019 - Toggle Device Hostname and FortiManager Device Name using a Custom Script",
-        "description": "1.  `Authorize` Device\n2.  Create `site_id` based on the Hostname. \n3.  Toggle the device hostname to have or remove `-TEST` and save as metadata called `hostname`.\n4.  Change the device **hostname** using a **DeviceDB Script**. \n5.  Change the **device name** in FortiManager using a **Custom Script** and **Custom Playbook** with FMG API. \n6.  Change the **hostname** in the **device record** of FortiSOAR using the return data from the custom script. ",
-        "orderPriority": 101,
+        "description": "1.  `Authorize` Device.\n2.  Create `site_id` based on the Hostname. \n3.  Toggle the device hostname to have or remove `-TEST` and save as metadata called `hostname`.\n4.  Change the device **hostname** using a **DeviceDB Script**. \n5.  Change the **device name** in FortiManager using a **Custom Script** and **Custom Playbook** with FMG API. \n6.  Change the **hostname** in the **device record** of FortiSOAR using the return data from the custom script. ",
+        "orderPriority": 119,
         "assignmentSearchMetadataSources": null,
         "assignmentSearch": "FG0+119",
         "aDOM": "root",
@@ -1003,9 +970,7 @@
         "metafieldTemplates": [
             "\/api\/3\/metafield_templates\/f4fcc1fa-0654-4d6d-89d8-3de1d5b1bb1f"
         ],
-        "devices": [
-            "\/api\/3\/devices\/8612047e-edbe-45ee-8ed7-5470ad6926ff"
-        ],
+        "devices": [],
         "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
         "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
         "assignmentSearchField": [
@@ -1017,7 +982,7 @@
         "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
         "createDate": 1712848378.341183,
         "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-        "modifyDate": 1712858954.342781,
+        "modifyDate": 1720808921.252722,
         "owners": [
             "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
         ],
@@ -1026,6 +991,159 @@
             "CustomScript",
             "FeatureTest",
             "metadata"
+        ]
+    },
+    {
+        "@type": "ZTPProfile",
+        "name": "FT020 - Create CLI Templates and a Provisioning Template Group",
+        "description": "1.  `Authorize` Device.\n2.  Create `site_id` based on the Hostname. \n3.  Create `CLI Template Script` to configure `lo1` using a `site_id` variable in the third octet of the IP. \n4.  Create `Jinja Template Script` to configure `lo2` using a `site_id` variable and the `ipsubnet` filter to get an IP from a supernet block. \n5.  The Step `Install Device Config` will create a `Provisioning Template Group` if needed. Create a `Provisioning Template Group` named `FT020`, if it does not exist, and Install the Template configuration. ",
+        "orderPriority": 120,
+        "assignmentSearchMetadataSources": null,
+        "assignmentSearch": "FG0+120",
+        "aDOM": "root",
+        "deviceGroups": "",
+        "provisioningTemplateGroup": "FT020",
+        "policyPackage": "",
+        "zTPStepMap": "{\n  \"Authorize\": {\n    \"next_step\": \"Device Metadata\"\n  },\n  \"Device Metadata\": {\n    \"next_step\": \"Run Linked Scripts\"\n  },\n  \"Run Linked Scripts\": {\n    \"next_step\": \"Install Device Config\"\n  },\n  \"Install Device Config\": {\n    \"next_step\": \"Complete\"\n  }\n}",
+        "clearLinkedMetafieldTemplates": true,
+        "clearLinkedScripts": true,
+        "clearDeviceMetadata": true,
+        "retainProfileAssignment": true,
+        "exportMetadataToFortiManager": true,
+        "incompleteMetafieldEmail": null,
+        "clearDeviceReports": false,
+        "incompleteMetafieldDeviceMetadataField": "contact_email",
+        "incompleteMetafieldEmailEnable": false,
+        "skipDeleteDevice": false,
+        "deviceMetadataMonitorRegex": "",
+        "deviceMetadataMonitorInterval": 300,
+        "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
+        "scripts": [
+            "\/api\/3\/scripts\/ce840e55-9e3d-43e4-98eb-4d3c7f21841f",
+            "\/api\/3\/scripts\/58f8575e-cf67-49d4-ba38-6e2b8442f40f"
+        ],
+        "metafieldTemplates": [
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+        ],
+        "devices": [],
+        "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
+        "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
+        "assignmentSearchField": [
+            "\/api\/3\/picklists\/f097ef3c-f528-472b-90e1-065f819403fc"
+        ],
+        "zTPPhaseStart": "\/api\/3\/picklists\/8facfd8e-4927-4a88-9019-a7bbcf8f8ef6",
+        "zTPProfileNext": null,
+        "uuid": "31c8a02d-6c59-4dbe-a42f-22baa95065d0",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1719941569.585064,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720808928.989784,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest",
+            "ProvisioningTemplateGroup"
+        ]
+    },
+    {
+        "@type": "ZTPProfile",
+        "name": "FT021 - Create a Policy Package & Install",
+        "description": "1.  `Authorize` Device.\n2.  Create `site_id` based on the Hostname. \n3.  The Step `Install Policy Package` will create a `Policy Package` if needed. Create a `Policy Package` named `FT021`, if it does not exist, and Install the Policy Package.  \n4.  When complete run the ZTP Profile `FT022` which will update the Policy Package. ",
+        "orderPriority": 121,
+        "assignmentSearchMetadataSources": null,
+        "assignmentSearch": "FG0+121",
+        "aDOM": "root",
+        "deviceGroups": "",
+        "provisioningTemplateGroup": null,
+        "policyPackage": "FT021",
+        "zTPStepMap": "{\n  \"Authorize\": {\n    \"next_step\": \"Device Metadata\"\n  },\n  \"Device Metadata\": {\n    \"next_step\": \"Install Policy Package\"\n  },\n  \"Install Policy Package\": {\n    \"next_step\": \"Complete\"\n  }\n}",
+        "clearLinkedMetafieldTemplates": true,
+        "clearLinkedScripts": true,
+        "clearDeviceMetadata": true,
+        "retainProfileAssignment": true,
+        "exportMetadataToFortiManager": false,
+        "incompleteMetafieldEmail": null,
+        "clearDeviceReports": false,
+        "incompleteMetafieldDeviceMetadataField": "contact_email",
+        "incompleteMetafieldEmailEnable": false,
+        "skipDeleteDevice": false,
+        "deviceMetadataMonitorRegex": "",
+        "deviceMetadataMonitorInterval": 300,
+        "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
+        "scripts": [],
+        "metafieldTemplates": [
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+        ],
+        "devices": [],
+        "assignmentMode": "\/api\/3\/picklists\/23454edf-9753-4965-bb1f-76cefbea4a15",
+        "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
+        "assignmentSearchField": [
+            "\/api\/3\/picklists\/f097ef3c-f528-472b-90e1-065f819403fc"
+        ],
+        "zTPPhaseStart": "\/api\/3\/picklists\/8facfd8e-4927-4a88-9019-a7bbcf8f8ef6",
+        "zTPProfileNext": "\/api\/3\/z_t_p_profiles\/e5247f4b-18cd-40fa-b163-ea85a5db6a18",
+        "uuid": "361902c6-274f-427d-b92e-81a9c35d8d4a",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1719946984.062737,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720808934.825899,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest",
+            "PolicyPackage"
+        ]
+    },
+    {
+        "@type": "ZTPProfile",
+        "name": "FT022 - Update a Policy Package and Install with Updates",
+        "description": "1.  `Authorize` Device.\n2.  Create `site_id` based on the Hostname. \n3.  The Step `Install Policy Package` will create a `Policy Package` if needed. Create a `Policy Package` named `FT021`, if it does not exist, and Install the Policy Package.",
+        "orderPriority": 122,
+        "assignmentSearchMetadataSources": null,
+        "assignmentSearch": "",
+        "aDOM": "root",
+        "deviceGroups": "",
+        "provisioningTemplateGroup": null,
+        "policyPackage": "",
+        "zTPStepMap": "{\n  \"Authorize\": {\n    \"next_step\": \"Device Metadata\"\n  },\n  \"Device Metadata\": {\n    \"next_step\": \"Run Linked Scripts\"\n  },\n  \"Run Linked Scripts\": {\n    \"next_step\": \"Install Policy Package\"\n  },\n  \"Install Policy Package\": {\n    \"next_step\": \"Complete\"\n  }\n}",
+        "clearLinkedMetafieldTemplates": true,
+        "clearLinkedScripts": true,
+        "clearDeviceMetadata": false,
+        "retainProfileAssignment": true,
+        "exportMetadataToFortiManager": false,
+        "incompleteMetafieldEmail": null,
+        "clearDeviceReports": false,
+        "incompleteMetafieldDeviceMetadataField": "contact_email",
+        "incompleteMetafieldEmailEnable": false,
+        "skipDeleteDevice": false,
+        "deviceMetadataMonitorRegex": "",
+        "deviceMetadataMonitorInterval": 300,
+        "profileMode": "\/api\/3\/picklists\/3726ac19-1265-4903-8c0b-554f1826fbe4",
+        "scripts": [
+            "\/api\/3\/scripts\/949e7d30-cee4-49c4-b38f-d821d8c7de39"
+        ],
+        "metafieldTemplates": [
+            "\/api\/3\/metafield_templates\/b7b91ff3-e0a5-4ca8-9e92-0c689ef49c97"
+        ],
+        "devices": [],
+        "assignmentMode": "\/api\/3\/picklists\/36ca77e8-286f-4f66-8158-7ae978a2f1ee",
+        "assignmentSearchType": "\/api\/3\/picklists\/4e8f738b-b4fe-45e7-bf22-333e89354b95",
+        "assignmentSearchField": [],
+        "zTPPhaseStart": "\/api\/3\/picklists\/8facfd8e-4927-4a88-9019-a7bbcf8f8ef6",
+        "zTPProfileNext": null,
+        "uuid": "e5247f4b-18cd-40fa-b163-ea85a5db6a18",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1720034405.232287,
+        "modifyUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "modifyDate": 1720808939.092702,
+        "owners": [
+            "\/api\/3\/teams\/6e569c09-3bd4-40f1-98b0-cc994464c3c5"
+        ],
+        "recordTags": [
+            "FeatureTest",
+            "PolicyPackage"
         ]
     }
 ]

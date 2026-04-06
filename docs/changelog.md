@@ -1,6 +1,9 @@
 [README](../README.md)
 
 # Change Log
+  - 20260319 (1.2.0)
+    - Add Policy example. 
+    
   - 20240416 (1.0.3)
     - Update minVersion in info. 
     - Update `Create Loopback - lo0 - DeviceDB`.

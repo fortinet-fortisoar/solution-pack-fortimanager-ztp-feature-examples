@@ -1,6 +1,6 @@
 {
     "name": "fortiManagerZTPFlow-FeatureExamples",
-    "version": "1.0.3",
+    "version": "1.2.0",
     "fsrMinCompatibility": "7.2.0",
     "type": "solutionpack",
     "local": true,
@@ -10,13 +10,13 @@
             "name": "fortiManagerZTPFlow",
             "type": "solutionpack",
             "label": "FortiManager ZTP Flow",
-            "minVersion": "1.0.3"
+            "minVersion": "1.2.0"
         }
     ],
     "prerequisite": null,
     "publisher": "Fortinet CSE",
     "description": "Feature focused solution examples using the FortiManager ZTP Flow Solution Pack. Create device models in your FMG and apply example solutions to see in action what would happen before you apply solutions to your production gear.",
-    "help": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-feature-examples/blob/release/1.0.0/README.md",
+    "help": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-feature-examples/blob/release/1.2.0/README.md",
     "category": [
         "Compliance and Reporting",
         "DevOps and Digital Operations",
